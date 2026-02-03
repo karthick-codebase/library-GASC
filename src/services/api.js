@@ -4,7 +4,7 @@
  * This ensures consistent error handling, loading states, and easy maintenance.
  */
 
-const API_BASE_URL = "https://lms-backend-data.onrender.com";
+const API_BASE_URL = "https://lms-backend-data-zvr3.onrender.com";
 
 /**
  * BOOKS API

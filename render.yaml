@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: library-gasc-frontend
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+    routes:
+      - path: /
+        destination: /index.html
+        type: rewrite
+
+  - type: web
+    name: library-gasc-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npx json-server --watch src/db.json --port $PORT
+    envVars:
+      - key: NODE_ENV
+        value: production
+    publishPath: src
+    routes:
+      - path: /

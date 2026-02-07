@@ -26,6 +26,18 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .md\:books-card {
+    background: none;
+    border-radius: 0;
+    backdrop-filter: none;
+    box-shadow: none;
+    padding: 1rem;
+    margin: 0;
+    animation: none;
+  }
+}
+
 @keyframes slideInUp {
   from {
     opacity: 0;

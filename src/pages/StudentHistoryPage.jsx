@@ -113,8 +113,8 @@ export default function StudentHistoryPage() {
   const paginatedRecords = filteredRecords.slice(startIndex, endIndex);
 
   return (
-    <div className="flex justify-center px-2 md:px-4 py-3 md:py-6">
-      <div className="w-full max-w-7xl books-card">
+    <div className="flex justify-center px-0 md:px-4 py-0 md:py-6 h-screen md:h-auto">
+      <div className="w-full md:max-w-7xl md:books-card">
         <h2 className="mb-6 text-center text-3xl font-bold books-title">
           Student Borrow History
         </h2>
